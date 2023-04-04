@@ -1,12 +1,12 @@
 {% extends 'main.html' %}
 
-{% block page_title %}DUY LE{% endblock page_title%}
+{% block page_title %}EXPERIMENTS{% endblock page_title%}
 
 {% block content %}
-    <h1>Welcome to my website!</h1>
-    <h2>Projects</h2>
+    <h1>These are all my personal projects that I do in my spare time</h1>
+    <h2>Personal Projects</h2>
     <ul>
-        {% for project in profile.projects.all  %}
+        {% for project in projects  %}
             <li><a href="{% url 'single-project' project.id %}"}</a>{{project.name}}</li>
         {% endfor %}
     </ul>

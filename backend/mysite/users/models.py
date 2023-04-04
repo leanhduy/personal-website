@@ -30,7 +30,9 @@ class Skill(models.Model):
 
 
 class Project(models.Model):
-    project_owner = models.ForeignKey(Profile, on_delete=models.CASCADE)
+    project_owner = models.ForeignKey(
+        Profile, on_delete=models.CASCADE, related_name="projects"
+    )
     name = models.CharField(max_length=100)
     description = models.TextField(max_length=500, blank=True, null=True)
     featured_image = models.ImageField(blank=True, null=True)
