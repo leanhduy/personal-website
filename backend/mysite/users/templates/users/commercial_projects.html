@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+
+{% block page_title %}COMMERCIAL{% endblock page_title%}
+
+{% block content %}
+    <h2>Commercial Projects</h2>
+    {% if projects %}
+    
+    <ul>
+        {% for project in projects  %}
+            <li><a href="{% url 'single-project' project.id %}"}</a>{{project.name}}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+        <p>Coming soon... 😬</p>
+    {% endif %}
+    
+{% endblock content %}
