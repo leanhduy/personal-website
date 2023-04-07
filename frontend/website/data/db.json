@@ -1,0 +1,15 @@
+{
+  "profile": {
+    "id": "7b4f4f4a-7d2f-4d4c-9e5e-7b4f4f4a7d2f",
+    "username": "leanhduy",
+    "firstname": "Duy",
+    "lastname": "Le",
+    "bio": "I'm a software engineer, I love to code and learn new things.",
+    "email": "laduy.hcmus@gmail.com",
+    "website": "http://localhost:8080/",
+    "github": "https://github.com/leanhduy",
+    "facebook": "https://www.facebook.com/leanhduy.se",
+    "linkedin": "https://www.linkedin.com/in/leanhduy73",
+    "location": "Ho Chi Minh city, Vietnam"
+  }
+}

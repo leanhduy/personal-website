@@ -1,5 +1,5 @@
 <template>
-  <About />
+  <div class="container-fluid">All my awards</div>
 </template>
 
 <script>
@@ -11,4 +11,3 @@ export default {
   },
 }
 </script>
-œ
