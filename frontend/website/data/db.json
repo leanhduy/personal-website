@@ -79,5 +79,31 @@
       "project_type": "personal",
       "tags": ["react", "django", "djangorestframework", "postgres"]
     }
+  ],
+  "awards": [
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aaaa1",
+      "name": "[1Z0-803] Oracle Certified Associate, Java SE 7 Programmer",
+      "url": "",
+      "featured_image": "https://images.credly.com/images/9956323d-90eb-4a7a-9fc6-4750ce433d3a/Oracle-Certification-badge_OC-Associate600X600.png",
+      "type": "certificate",
+      "date_taken": "2017-07-11"
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aaaa2",
+      "name": "[PCAP-31-03] Certified Associate in Python Programming",
+      "url": "https://www.credly.com/badges/9593a717-151f-4a44-9047-e93d7f2eec8d/linked_in?t=rprewb",
+      "featured_image": "https://images.credly.com/size/680x680/images/587b02d4-41d5-4a81-9b9d-b5076200713c/pcap-31-xx.png",
+      "type": "certificate",
+      "date_taken": "2023-02-08"
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aaaa3",
+      "name": "[DXC Technology] - Top Performance of the Department",
+      "url": null,
+      "featured_image": null,
+      "type": "award",
+      "date_taken": "2015-12-17"
+    }
   ]
 }
