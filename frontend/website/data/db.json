@@ -168,5 +168,42 @@
       "degree": "Bachelor of Computer Science",
       "major": "Software Engineering"
     }
+  ],
+  "skills": [
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aae01",
+      "name": "javascript",
+      "svg_name": "javascript.svg"
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aae02",
+      "name": "typescript",
+      "svg_name": "typescript.svg"
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aae03",
+      "name": "reactjs",
+      "svg_name": "reactjs.svg"
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aae04",
+      "name": "vuejs",
+      "svg_name": "vuejs.svg"
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aae05",
+      "name": "python",
+      "svg_name": "python.svg"
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aae06",
+      "name": "django",
+      "svg_name": "django.svg"
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aae07",
+      "name": "postgres",
+      "svg_name": "postgres.svg"
+    }
   ]
 }

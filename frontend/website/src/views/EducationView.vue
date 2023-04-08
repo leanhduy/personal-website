@@ -30,10 +30,3 @@ export default {
   },
 }
 </script>
-<style scoped>
-.featured_image {
-  width: 50%;
-  height: auto;
-  object-fit: cover;
-}
-</style>
