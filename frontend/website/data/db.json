@@ -44,7 +44,7 @@
       "website_url": "https://moneylover.me/",
       "featured_image": "https://images.unsplash.com/photo-1543164904-8ff92670a192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
       "project_type": "personal",
-      "tags": ["react", "django", "djangorestframework", "postgres"]
+      "tags": ["react", "django", "django-rest-framework", "postgres"]
     },
     {
       "id": "7b4f4f4a-7d2f-4d4c-9e5e-7b4f4f4a7d2f",
@@ -77,7 +77,7 @@
       "website_url": "https://moneylover.me/",
       "featured_image": "https://images.unsplash.com/photo-1543164904-8ff92670a192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
       "project_type": "personal",
-      "tags": ["react", "django", "djangorestframework", "postgres"]
+      "tags": ["react", "django", "django-rest-framework", "postgres"]
     }
   ],
   "awards": [
@@ -104,6 +104,58 @@
       "featured_image": null,
       "type": "award",
       "date_taken": "2015-12-17"
+    }
+  ],
+  "experiences": [
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aaae1",
+      "startDate": "January 2014",
+      "endDate": "April 2017",
+      "company": "CSC Vietnam",
+      "position": "Associate Software Engineer",
+      "responsibilities": [
+        "Work and collaborate in a delivery team that usually has 2-3 offshore members.",
+        "Work directly under an onshore UK/US technical lead and an UK/US onshore project manager.",
+        "Provide daily reports and attend project weekly meetings.",
+        "Configure and/or customize an Electronic Document Management System (EDMS) application.",
+        "Support testers during validation phase (dry-run and formal)",
+        "Troubleshoot and fix issues and record solutions in Disaster Recovery environment before applying them into Production environment."
+      ]
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aaae2",
+      "startDate": "April 2017",
+      "endDate": "January 2020",
+      "company": "DXC Technology Vietnam",
+      "position": "Implementation Engineer",
+      "responsibilities": [
+        "Authoring, updating and executing Installation Qualification scripts (IQs) to deploy and configure pre-qualified image of a bundle of EDMS (Electronic Document Management System) apps",
+        "Attending meetings with onshore Technical Lead and client’s technical lead to monitor progress, address issues and provide solutions for the Development environment.",
+        "Support testers during validation phases (dry-run and formal), troubleshoot and fix issues and record solutions in the Disaster Recovery environment before applying them into the Production environment."
+      ]
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aaae3",
+      "startDate": "February 2020",
+      "endDate": "March 2022",
+      "company": "VBPO Vietnam",
+      "position": "Software Engineer",
+      "responsibilities": [
+        "Develop a set of applications using MS PowerPlatform in order to automate the operations and centralize data in a factory using low-code platforms.",
+        "Research, consult and deploy ERP solutions to help factories reduce waste and optimize resources during daily operation.",
+        "Tools: Microsoft PowerApps, Power Automate, Power BI"
+      ]
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aaae4",
+      "startDate": "April 2022",
+      "endDate": "November 2022",
+      "company": "StarStudio (StartUp)",
+      "position": "Software Engineer",
+      "responsibilities": [
+        "Develop web app for selling private keys to the investor using ReactJS, GoLang, NodeJS, GraphQL, Solidity",
+        "Research on some of the AI open-source libraries to create virtual idols for the metaverse (e.g: mixing faces of famous celebrities and other dataset to train a new models, in order to mass generating faces used as a virtual online characters)"
+      ]
     }
   ]
 }
