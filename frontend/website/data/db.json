@@ -11,5 +11,73 @@
     "facebook": "https://www.facebook.com/leanhduy.se",
     "linkedin": "https://www.linkedin.com/in/leanhduy73",
     "location": "Ho Chi Minh city, Vietnam"
-  }
+  },
+  "projects": [
+    {
+      "id": "7b4f4f4a-7d2f-4d4c-9e5e-7b4f4f4a7d2f",
+      "name": "Personal Website",
+      "description": "The website you are looking at is built with Vue 3, Django and Postgres. This is where I share my projects and blog posts.",
+      "project_owner": "Duy Le",
+      "source_url": "https://github.com/laduy-org/personal-website",
+      "website_url": "http://localhost:8080/",
+      "featured_image": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+      "project_type": "personal",
+      "tags": ["vue", "django", "postgres"]
+    },
+    {
+      "id": "324f4f4a-7d2f-4d4c-9e5e-7b4f4f4a7d2f",
+      "name": "NFT Marketplace",
+      "description": "The marketplace to display, sell and auction NFTs using Cryptocurrencies.",
+      "project_owner": "Duy Le",
+      "source_url": "https://github.com/ProjectOpenSea",
+      "website_url": "https://www.opensea.io/",
+      "featured_image": "https://www.esports.net/wp-content/uploads/2022/02/nft-marketplace.jpg",
+      "project_type": "personal",
+      "tags": ["solidity", "React", "GraphQL", "Javascript", "MongoDB"]
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4a1234",
+      "name": "Tracking Apps",
+      "description": "Tracking Apps for tracking your daily activities.",
+      "project_owner": "Duy Le",
+      "source_url": "https://github.com/pybotlad-org/trackapps",
+      "website_url": "https://moneylover.me/",
+      "featured_image": "https://images.unsplash.com/photo-1543164904-8ff92670a192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+      "project_type": "personal",
+      "tags": ["react", "django", "djangorestframework", "postgres"]
+    },
+    {
+      "id": "7b4f4f4a-7d2f-4d4c-9e5e-7b4f4f4a7d2f",
+      "name": "Personal Website",
+      "description": "The website you are looking at is built with Vue 3, Django and Postgres. This is where I share my projects and blog posts.",
+      "project_owner": "Duy Le",
+      "source_url": "https://github.com/laduy-org/personal-website",
+      "website_url": "http://localhost:8080/",
+      "featured_image": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+      "project_type": "personal",
+      "tags": ["vue", "django", "postgres"]
+    },
+    {
+      "id": "324f4f4a-7d2f-4d4c-9e5e-7b4f4f4a7d2f",
+      "name": "NFT Marketplace",
+      "description": "The marketplace to display, sell and auction NFTs using Cryptocurrencies.",
+      "project_owner": "Duy Le",
+      "source_url": "https://github.com/ProjectOpenSea",
+      "website_url": "https://www.opensea.io/",
+      "featured_image": "https://www.esports.net/wp-content/uploads/2022/02/nft-marketplace.jpg",
+      "project_type": "personal",
+      "tags": ["solidity", "React", "GraphQL", "Javascript", "MongoDB"]
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4a1234",
+      "name": "Tracking Apps",
+      "description": "Tracking Apps for tracking your daily activities.",
+      "project_owner": "Duy Le",
+      "source_url": "https://github.com/pybotlad-org/trackapps",
+      "website_url": "https://moneylover.me/",
+      "featured_image": "https://images.unsplash.com/photo-1543164904-8ff92670a192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+      "project_type": "personal",
+      "tags": ["react", "django", "djangorestframework", "postgres"]
+    }
+  ]
 }
