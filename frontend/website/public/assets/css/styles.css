@@ -77,7 +77,8 @@
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
   --bs-link-color: #bd5d38;
-  --bs-link-hover-color: #974a2d;
+  /* --bs-link-hover-color: #974a2d; */
+  --bs-link-hover-color: #0dcaf0;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -12739,7 +12740,7 @@ p.lead {
 }
 
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: #3e65c7;
 }
 
 .dev-icons {
@@ -12775,4 +12776,46 @@ section.resume-section .resume-section-content {
   }
 }
 
-/* CUSTOM STYLES */
+/* * CUSTOM STYLES */
+/* * MARGIN RIGHT */
+.mr-0 {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.mr-1 {
+  margin-right: 0.25rem !important;
+}
+
+.mr-2 {
+  margin-right: 0.5rem !important;
+}
+
+.mr-3 {
+  margin-right: 1rem !important;
+}
+
+.mr-4 {
+  margin-right: 1.5rem !important;
+}
+
+.mr-5 {
+  margin-right: 3rem !important;
+}
+
+.mr-auto {
+  margin-right: auto !important;
+}
+
+.social-icon-sm {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #244261;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}

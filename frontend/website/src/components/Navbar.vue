@@ -27,6 +27,9 @@
           <router-link class="nav-link js-scroll-trigger" :to="{ name: 'home' }">About</router-link>
         </li>
         <li class="nav-item">
+          <router-link class="nav-link js-scroll-trigger" :to="{ name: 'projects' }">Projects</router-link>
+        </li>
+        <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#experience">Experiences</a>
         </li>
         <li class="nav-item">
