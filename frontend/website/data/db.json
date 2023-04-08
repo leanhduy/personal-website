@@ -157,5 +157,16 @@
         "Research on some of the AI open-source libraries to create virtual idols for the metaverse (e.g: mixing faces of famous celebrities and other dataset to train a new models, in order to mass generating faces used as a virtual online characters)"
       ]
     }
+  ],
+  "education": [
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aaed1",
+      "startDate": "2009",
+      "endDate": "20012",
+      "gpa": "2.85/4.0",
+      "school": "[HCMUS] University of Science - Ho Chi Minh City",
+      "degree": "Bachelor of Computer Science",
+      "major": "Software Engineering"
+    }
   ]
 }
