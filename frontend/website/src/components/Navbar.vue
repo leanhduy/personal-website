@@ -30,16 +30,13 @@
           <router-link class="nav-link js-scroll-trigger" :to="{ name: 'projects' }">Projects</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experiences</a>
+          <router-link class="nav-link js-scroll-trigger" :to="{ name: 'experiences' }">Experience</router-link>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#education">Education</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
         </li>
         <li class="nav-item">
           <router-link class="nav-link" :to="{ name: 'awards' }">Awards</router-link>

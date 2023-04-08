@@ -19,7 +19,7 @@
 <script>
 import getAwards from '../composables/getAwards'
 export default {
-  name: 'HomeView',
+  name: 'AwardsView',
   setup() {
     const { awards, error, load } = getAwards()
     load()
