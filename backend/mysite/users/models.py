@@ -10,7 +10,7 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     username = models.CharField(max_length=30, blank=True, null=True)
     name = models.CharField(max_length=50, blank=True, null=True)
-    bio = models.TextField(max_length=500, blank=True, null=True)
+    bio = models.TextField(blank=True, null=True)
     email = models.EmailField(max_length=254, blank=True, null=True)
     github_profile = models.URLField(max_length=200, blank=True, null=True)
     facebook_profile = models.URLField(max_length=200, blank=True, null=True)
@@ -27,7 +27,7 @@ class Skill(models.Model):
     skill_owner = models.ForeignKey(Profile, on_delete=models.CASCADE)
     name = models.CharField(max_length=30)
     description = models.TextField(max_length=500, blank=True, null=True)
-    svg_image = models.ImageField(blank=True, null=True)
+    svg_image = models.FileField(blank=True, null=True)
 
     def __str__(self):
         return self.name
@@ -58,7 +58,6 @@ class Tag(models.Model):
 
 
 class Award(models.Model):
-    ACHIEVEMENT_TYPES = (("award", "Award"), ("certification", "Certification"))
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     name = models.CharField(max_length=100)
     date_taken = models.DateField()
@@ -82,7 +81,7 @@ class Education(models.Model):
     owner = models.ForeignKey(Profile, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.school_name
+        return f"{self.degree} at {self.school_name}"
 
 
 class Experience(models.Model):

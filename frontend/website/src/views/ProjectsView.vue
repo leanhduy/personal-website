@@ -11,7 +11,7 @@
           <div class="flex-grow-1">
             <h3 class="mb-0">{{ project.name }}</h3>
             <div class="subheading mb-3">
-              <div v-for="tag in project.tags" :key="tag" class="badge bg-info mr-1">{{ tag }}</div>
+              <!-- TODO: Find way to fetching tag for every tag id of the Project object -->
             </div>
             <p>
               {{ project.description }}
@@ -22,7 +22,11 @@
             </div>
           </div>
           <div class="container text-end">
-            <img :src="project.featured_image" class="featured_image" :alt="project.name" />
+            <img
+              :src="`${MEDIA_URL}/${project.featured_image}`"
+              class="featured_image mt-2 rounded-pill"
+              :alt="project.name"
+            />
           </div>
         </div>
       </div>
@@ -39,12 +43,18 @@ export default {
     load()
     return { projects, error }
   },
+  computed: {
+    MEDIA_URL() {
+      return 'http://localhost:8000'
+    },
+  },
 }
 </script>
 <style scoped>
 .featured_image {
-  width: 50%;
-  height: auto;
+  width: 20rem;
+  height: 10rem;
+  max-width: 25rem;
   object-fit: cover;
 }
 </style>

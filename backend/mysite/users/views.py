@@ -1,33 +1,76 @@
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 from django.shortcuts import render
-from .models import Project, Profile
+from .models import Project, Tag, Skill, Education, Experience, Award
+from .serializer.serializers import (
+    ProjectSerializer,
+    TagSerializer,
+    SkillSerializer,
+    ExperienceSerializer,
+    EducationSerializer,
+    AwardSerializer,
+)
 
 # Create your views here.
 
 
 def index(request):
     """A view to return the index page"""
-    profile = Profile.objects.first()
+    profile = Project.objects.first()
     return render(request, "users/index.html", {"profile": profile})
 
 
-def single_project(request, id):
-    """A view to return a single project"""
-    project = Project.objects.get(id=id)
-    return render(request, "users/single_project.html", {"project": project})
+# * APIs
+# ? Project APIs
+@api_view(["GET"])
+def get_projects(request):
+    projects = Project.objects.all()
+    serializer = ProjectSerializer(projects, many=True)
+    return Response(serializer.data)
 
 
-def personal_projects(request):
-    """A view to return all personal projects"""
-    projects = Project.objects.filter(project_type="P")
-    return render(request, "users/personal_projects.html", {"projects": projects})
+# ? Tag APIs
+@api_view(["GET"])
+def get_tags(request):
+    tags = Tag.objects.all()
+    serializer = TagSerializer(tags, many=True)
+    return Response(serializer.data)
 
 
-def commercial_projects(request):
-    """A view to return all commercial projects"""
-    projects = Project.objects.filter(project_type="C")
-    return render(request, "users/commercial_projects.html", {"projects": projects})
+@api_view(["GET"])
+def get_tag_by_id(request, id):
+    tag = Tag.objects.get(id=id)
+    serializer = TagSerializer(tag, many=False)
+    return Response(serializer.data)
 
 
-def contact_me(request):
-    """A view to return the contact page"""
-    return render(request, "users/contact_me.html")
+# ? Skill APIs
+@api_view(["GET"])
+def get_skills(request):
+    skills = Skill.objects.all()
+    serializer = SkillSerializer(skills, many=True)
+    return Response(serializer.data)
+
+
+# ? Experience APIs
+@api_view(["GET"])
+def get_experiences(request):
+    experiences = Experience.objects.all()
+    serializer = ExperienceSerializer(experiences, many=True)
+    return Response(serializer.data)
+
+
+# ? Education APIs
+@api_view(["GET"])
+def get_educations(request):
+    educations = Education.objects.all()
+    serializer = EducationSerializer(educations, many=True)
+    return Response(serializer.data)
+
+
+# ? Award APIs
+@api_view(["GET"])
+def get_awards(request):
+    awards = Award.objects.all()
+    serializer = AwardSerializer(awards, many=True)
+    return Response(serializer.data)
