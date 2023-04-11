@@ -1,7 +1,7 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from django.shortcuts import render
-from .models import Project, Tag, Skill, Education, Experience, Award
+from .models import Project, Tag, Skill, Education, Experience, Award, Profile
 from .serializer.serializers import (
     ProjectSerializer,
     TagSerializer,
@@ -9,6 +9,7 @@ from .serializer.serializers import (
     ExperienceSerializer,
     EducationSerializer,
     AwardSerializer,
+    ProfileSerializer,
 )
 
 # Create your views here.
@@ -16,11 +17,19 @@ from .serializer.serializers import (
 
 def index(request):
     """A view to return the index page"""
-    profile = Project.objects.first()
+    profile = Profile.objects.first()
     return render(request, "users/index.html", {"profile": profile})
 
 
 # * APIs
+# ? Profile APIs (Since there is only one profile, we don't need to get profile by id)
+@api_view(["GET"])
+def get_admin(request):
+    profile = Profile.objects.first()
+    serializer = ProfileSerializer(profile, many=False)
+    return Response(serializer.data)
+
+
 # ? Project APIs
 @api_view(["GET"])
 def get_projects(request):

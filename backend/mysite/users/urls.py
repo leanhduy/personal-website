@@ -3,6 +3,7 @@ from . import views
 
 urlpatterns = [
     path("", views.index, name="homepage"),
+    path("api/v1/admin", views.get_admin, name="get-admin-profile"),
     path("api/v1/projects", views.get_projects, name="get-all-projects"),
     path("api/v1/tags", views.get_tags, name="get-all-tags"),
     path("api/v1/tags/<uuid:id>", views.get_tag_by_id, name="get-tag-by-id"),

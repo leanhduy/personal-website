@@ -36,6 +36,7 @@
 
 <script>
 import getProjects from '../composables/getProjects.js'
+import { MEDIA_URL } from '../consts/consts.js'
 export default {
   name: 'ProjectsView',
   setup() {
@@ -45,7 +46,7 @@ export default {
   },
   computed: {
     MEDIA_URL() {
-      return 'http://localhost:8000'
+      return MEDIA_URL
     },
   },
 }
