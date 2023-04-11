@@ -1,6 +1,2 @@
-PROJECT_TYPES = [("P", "Personal"), ("C", "Commercial")]
-ACHIEVEMENT_TYPES = [
-    ("A", "Award"),
-    ("C", "Certificates"),
-    ("T", "Title"),
-]
+PROJECT_TYPES = [("personal", "Personal"), ("commercial", "Commercial")]
+ACHIEVEMENT_TYPES = (("award", "Award"), ("certification", "Certification"))

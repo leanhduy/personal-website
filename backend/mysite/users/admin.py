@@ -27,7 +27,7 @@ class EducationAdmin(admin.ModelAdmin):
 
 class ExperienceAdmin(admin.ModelAdmin):
     model = Experience
-    list_display = ["name", "organization", "position"]
+    list_display = ["organization", "position"]
 
 
 class SkillAdmin(admin.ModelAdmin):
