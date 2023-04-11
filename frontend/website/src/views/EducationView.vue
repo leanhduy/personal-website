@@ -5,13 +5,16 @@
         <h2 class="mb-5">Education</h2>
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="flex-grow-1">
-            <h3 class="mb-0">{{ ed.school }}</h3>
+            <h3 class="mb-0 text-info">{{ ed.school_name }}</h3>
             <div class="subheading mb-3">{{ ed.degree }}</div>
             <div>Major: {{ ed.major }}</div>
-            <p>GPA: {{ ed.gpa }}</p>
+            <p>GPA: {{ ed.gpa }}/10</p>
           </div>
           <div class="flex-shrink-0">
-            <span class="text-primary">{{ ed.startDate }} - {{ ed.endDate }}</span>
+            <h4 class="text-primary">
+              {{ new Date(ed.start_date).getMonth() }}/{{ new Date(ed.start_date).getFullYear() }} -
+              {{ new Date(ed.end_date).getMonth() }}/{{ new Date(ed.end_date).getFullYear() }}
+            </h4>
           </div>
         </div>
       </div>

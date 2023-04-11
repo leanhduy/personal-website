@@ -10,14 +10,20 @@
         >
           <div class="flex-grow-1">
             <h3 class="mb-0">{{ exp.position }}</h3>
-            <div class="subheading mb-3">{{ exp.company }}</div>
+            <div class="subheading mb-3">{{ exp.organization }}</div>
             <div class="subheading mb-3 text-info">Main Responsibilities</div>
             <ul>
-              <li v-for="item in exp.responsibilities" :key="item">{{ item }}</li>
+              <li v-for="item in exp.responsibilities.split('\n')" :key="item">
+                {{ item }}
+              </li>
             </ul>
           </div>
           <div class="flex-shrink-0">
-            <span class="text-primary">{{ exp.startDate }} - {{ exp.endDate }}</span>
+            <h5 class="text-primary">
+              {{ new Date(exp.start_date).toLocaleString('default', { month: 'short', year: 'numeric' }) }}
+              -
+              {{ new Date(exp.end_date).toLocaleString('default', { month: 'short', year: 'numeric' }) }}
+            </h5>
           </div>
         </div>
       </div>

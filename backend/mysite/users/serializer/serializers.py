@@ -1,5 +1,11 @@
 from rest_framework import serializers
-from users.models import Project, Tag, Skill, Experience, Education, Award
+from users.models import Project, Tag, Skill, Experience, Education, Award, Profile
+
+
+class ProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Profile
+        fields = "__all__"
 
 
 class ProjectSerializer(serializers.ModelSerializer):

@@ -4,12 +4,22 @@ const getAwards = () => {
   const error = ref(null)
   const load = async () => {
     try {
-      const response = await fetch('http://localhost:3000/awards')
+      const response = await fetch('http://localhost:8000/api/v1/awards')
       if (!response.ok) {
         throw Error('No data available')
       }
       const data = await response.json()
       awards.value = data
+      // Sort the awards by date taken (Latest come first)
+      data.sort((award1, award2) => {
+        if (award1.date_taken > award2.date_taken) {
+          return -1
+        } else if (award1.date_taken < award2.date_taken) {
+          return 1
+        } else {
+          return 0
+        }
+      })
     } catch (error) {
       console.log('Something wrong!', error.message)
     }

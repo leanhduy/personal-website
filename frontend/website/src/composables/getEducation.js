@@ -4,7 +4,7 @@ const getEducation = () => {
   const error = ref(null)
   const load = async () => {
     try {
-      const response = await fetch('http://localhost:3000/education')
+      const response = await fetch('http://localhost:8000/api/v1/educations')
       if (!response.ok) {
         throw Error('No data available')
       }
