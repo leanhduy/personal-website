@@ -3,16 +3,10 @@
     <section class="resume-section" id="skills">
       <div class="resume-section-content">
         <h2 class="mb-5">Skills</h2>
-        <div class="subheading mb-3">Programming Languages & Tools</div>
+        <div class="h3 mb-3">Programming Languages & Tools</div>
         <ul class="list-inline dev-icons">
           <li class="list-inline-item my-svg" v-for="skill in this.skills" :key="skill.id">
-            <object
-              class="my-svg"
-              :data="`assets/svg/${skill.svg_name}`"
-              width="50"
-              height="50"
-              type="image/svg+xml"
-            ></object>
+            <img class="my-skill-image" :src="`${MEDIA_URL}${skill.svg_image}`" alt="skill.name" />
           </li>
         </ul>
       </div>
@@ -22,6 +16,7 @@
 
 <script>
 import getSkills from '../composables/getSkills.js'
+import { MEDIA_URL } from '../consts/consts.js'
 export default {
   name: 'SkillsView',
   setup() {
@@ -29,5 +24,19 @@ export default {
     load()
     return { skills, error }
   },
+  computed: {
+    MEDIA_URL() {
+      return MEDIA_URL
+    },
+  },
 }
 </script>
+
+<style scoped>
+.my-skill-image {
+  width: 4rem;
+  height: 4rem;
+  max-width: 4rem;
+  object-fit: cover;
+}
+</style>
