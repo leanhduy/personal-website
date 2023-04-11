@@ -1,0 +1,209 @@
+{
+  "profile": {
+    "id": "7b4f4f4a-7d2f-4d4c-9e5e-7b4f4f4a7d2f",
+    "username": "leanhduy",
+    "firstname": "Duy",
+    "lastname": "Le",
+    "bio": "I'm a software engineer, I love to code and learn new things.",
+    "email": "laduy.hcmus@gmail.com",
+    "website": "http://localhost:8080/",
+    "github": "https://github.com/leanhduy",
+    "facebook": "https://www.facebook.com/leanhduy.se",
+    "linkedin": "https://www.linkedin.com/in/leanhduy73",
+    "location": "Ho Chi Minh city, Vietnam"
+  },
+  "projects": [
+    {
+      "id": "7b4f4f4a-7d2f-4d4c-9e5e-7b4f4f4a7d2f",
+      "name": "Personal Website",
+      "description": "The website you are looking at is built with Vue 3, Django and Postgres. This is where I share my projects and blog posts.",
+      "project_owner": "Duy Le",
+      "source_url": "https://github.com/laduy-org/personal-website",
+      "website_url": "http://localhost:8080/",
+      "featured_image": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+      "project_type": "personal",
+      "tags": ["vue", "django", "postgres"]
+    },
+    {
+      "id": "324f4f4a-7d2f-4d4c-9e5e-7b4f4f4a7d2f",
+      "name": "NFT Marketplace",
+      "description": "The marketplace to display, sell and auction NFTs using Cryptocurrencies.",
+      "project_owner": "Duy Le",
+      "source_url": "https://github.com/ProjectOpenSea",
+      "website_url": "https://www.opensea.io/",
+      "featured_image": "https://www.esports.net/wp-content/uploads/2022/02/nft-marketplace.jpg",
+      "project_type": "personal",
+      "tags": ["solidity", "React", "GraphQL", "Javascript", "MongoDB"]
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4a1234",
+      "name": "Tracking Apps",
+      "description": "Tracking Apps for tracking your daily activities.",
+      "project_owner": "Duy Le",
+      "source_url": "https://github.com/pybotlad-org/trackapps",
+      "website_url": "https://moneylover.me/",
+      "featured_image": "https://images.unsplash.com/photo-1543164904-8ff92670a192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+      "project_type": "personal",
+      "tags": ["react", "django", "django-rest-framework", "postgres"]
+    },
+    {
+      "id": "7b4f4f4a-7d2f-4d4c-9e5e-7b4f4f4a7d2f",
+      "name": "Personal Website",
+      "description": "The website you are looking at is built with Vue 3, Django and Postgres. This is where I share my projects and blog posts.",
+      "project_owner": "Duy Le",
+      "source_url": "https://github.com/laduy-org/personal-website",
+      "website_url": "http://localhost:8080/",
+      "featured_image": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+      "project_type": "personal",
+      "tags": ["vue", "django", "postgres"]
+    },
+    {
+      "id": "324f4f4a-7d2f-4d4c-9e5e-7b4f4f4a7d2f",
+      "name": "NFT Marketplace",
+      "description": "The marketplace to display, sell and auction NFTs using Cryptocurrencies.",
+      "project_owner": "Duy Le",
+      "source_url": "https://github.com/ProjectOpenSea",
+      "website_url": "https://www.opensea.io/",
+      "featured_image": "https://www.esports.net/wp-content/uploads/2022/02/nft-marketplace.jpg",
+      "project_type": "personal",
+      "tags": ["solidity", "React", "GraphQL", "Javascript", "MongoDB"]
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4a1234",
+      "name": "Tracking Apps",
+      "description": "Tracking Apps for tracking your daily activities.",
+      "project_owner": "Duy Le",
+      "source_url": "https://github.com/pybotlad-org/trackapps",
+      "website_url": "https://moneylover.me/",
+      "featured_image": "https://images.unsplash.com/photo-1543164904-8ff92670a192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+      "project_type": "personal",
+      "tags": ["react", "django", "django-rest-framework", "postgres"]
+    }
+  ],
+  "awards": [
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aaaa1",
+      "name": "[1Z0-803] Oracle Certified Associate, Java SE 7 Programmer",
+      "url": "",
+      "featured_image": "https://images.credly.com/images/9956323d-90eb-4a7a-9fc6-4750ce433d3a/Oracle-Certification-badge_OC-Associate600X600.png",
+      "type": "certificate",
+      "date_taken": "2017-07-11"
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aaaa2",
+      "name": "[PCAP-31-03] Certified Associate in Python Programming",
+      "url": "https://www.credly.com/badges/9593a717-151f-4a44-9047-e93d7f2eec8d/linked_in?t=rprewb",
+      "featured_image": "https://images.credly.com/size/680x680/images/587b02d4-41d5-4a81-9b9d-b5076200713c/pcap-31-xx.png",
+      "type": "certificate",
+      "date_taken": "2023-02-08"
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aaaa3",
+      "name": "[DXC Technology] - Top Performance of the Department",
+      "url": null,
+      "featured_image": null,
+      "type": "award",
+      "date_taken": "2015-12-17"
+    }
+  ],
+  "experiences": [
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aaae1",
+      "startDate": "January 2014",
+      "endDate": "April 2017",
+      "company": "CSC Vietnam",
+      "position": "Associate Software Engineer",
+      "responsibilities": [
+        "Work and collaborate in a delivery team that usually has 2-3 offshore members.",
+        "Work directly under an onshore UK/US technical lead and an UK/US onshore project manager.",
+        "Provide daily reports and attend project weekly meetings.",
+        "Configure and/or customize an Electronic Document Management System (EDMS) application.",
+        "Support testers during validation phase (dry-run and formal)",
+        "Troubleshoot and fix issues and record solutions in Disaster Recovery environment before applying them into Production environment."
+      ]
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aaae2",
+      "startDate": "April 2017",
+      "endDate": "January 2020",
+      "company": "DXC Technology Vietnam",
+      "position": "Implementation Engineer",
+      "responsibilities": [
+        "Authoring, updating and executing Installation Qualification scripts (IQs) to deploy and configure pre-qualified image of a bundle of EDMS (Electronic Document Management System) apps",
+        "Attending meetings with onshore Technical Lead and client’s technical lead to monitor progress, address issues and provide solutions for the Development environment.",
+        "Support testers during validation phases (dry-run and formal), troubleshoot and fix issues and record solutions in the Disaster Recovery environment before applying them into the Production environment."
+      ]
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aaae3",
+      "startDate": "February 2020",
+      "endDate": "March 2022",
+      "company": "VBPO Vietnam",
+      "position": "Software Engineer",
+      "responsibilities": [
+        "Develop a set of applications using MS PowerPlatform in order to automate the operations and centralize data in a factory using low-code platforms.",
+        "Research, consult and deploy ERP solutions to help factories reduce waste and optimize resources during daily operation.",
+        "Tools: Microsoft PowerApps, Power Automate, Power BI"
+      ]
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aaae4",
+      "startDate": "April 2022",
+      "endDate": "November 2022",
+      "company": "StarStudio (StartUp)",
+      "position": "Software Engineer",
+      "responsibilities": [
+        "Develop web app for selling private keys to the investor using ReactJS, GoLang, NodeJS, GraphQL, Solidity",
+        "Research on some of the AI open-source libraries to create virtual idols for the metaverse (e.g: mixing faces of famous celebrities and other dataset to train a new models, in order to mass generating faces used as a virtual online characters)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aaed1",
+      "startDate": "2009",
+      "endDate": "20012",
+      "gpa": "2.85/4.0",
+      "school": "[HCMUS] University of Science - Ho Chi Minh City",
+      "degree": "Bachelor of Computer Science",
+      "major": "Software Engineering"
+    }
+  ],
+  "skills": [
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aae01",
+      "name": "javascript",
+      "svg_name": "javascript.svg"
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aae02",
+      "name": "typescript",
+      "svg_name": "typescript.svg"
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aae03",
+      "name": "reactjs",
+      "svg_name": "reactjs.svg"
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aae04",
+      "name": "vuejs",
+      "svg_name": "vuejs.svg"
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aae05",
+      "name": "python",
+      "svg_name": "python.svg"
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aae06",
+      "name": "django",
+      "svg_name": "django.svg"
+    },
+    {
+      "id": "1ccf4f4a-1b3c-4d4c-9e5e-7b4f4f4aae07",
+      "name": "postgres",
+      "svg_name": "postgres.svg"
+    }
+  ]
+}
