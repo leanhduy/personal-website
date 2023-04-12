@@ -120,3 +120,6 @@ dmypy.json
 
 # test.html This file is for autoformat
 test.html
+
+# sqlite export data
+data.json

@@ -13,12 +13,10 @@ from .serializer.serializers import (
 )
 
 # Create your views here.
+from dotenv import load_dotenv
+import os
 
-
-def index(request):
-    """A view to return the index page"""
-    profile = Profile.objects.first()
-    return render(request, "users/index.html", {"profile": profile})
+load_dotenv()
 
 
 # * APIs
