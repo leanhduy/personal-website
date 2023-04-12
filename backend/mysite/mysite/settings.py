@@ -11,9 +11,12 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+from dotenv import load_dotenv
 import os
-
 import mimetypes
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Add SVG to the list of known mimetypes for loading svg file in Vue templates
 mimetypes.add_type("image/svg+xml", ".svg")
@@ -28,7 +31,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 # TODO: Removed this secret key for SECURITY reason. When deploying to production, generate a new secret key and store it in an environment variable, using this command
 # python manage.py shell -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
-SECRET_KEY = "django-insecure-ndwkvcs)s6*^sk%tchytwgobj=1q^3k!3iyols0!rh(t$8v46&"
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -92,17 +95,17 @@ WSGI_APPLICATION = "mysite.wsgi.application"
 
 DATABASES = {
     # ! FOR PASSING CI TESTS ON GITHUB - UNCOMMENT THIS SECTION AND COMMENT OUT THE NEXT SECTION WHEN COMMITTING TO GITHUB
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    },
-    # ! FOR DEVELOPING LOCALLY - UNCOMMENT THIS SECTION AND COMMENT OUT THE PREVIOUS SECTION WHEN DEVELOPING LOCALLY
     # "default": {
-    #     "ENGINE": "django.db.backends.postgresql",
-    #     "NAME": "personal_website_dev_db",
-    #     "USER": "postgres",
-    #     "PASSWORD": "python123!",
+    #     "ENGINE": "django.db.backends.sqlite3",
+    #     "NAME": BASE_DIR / "db.sqlite3",
     # },
+    # ! FOR DEVELOPING LOCALLY - UNCOMMENT THIS SECTION AND COMMENT OUT THE PREVIOUS SECTION WHEN DEVELOPING LOCALLY
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "personal_website_dev_db",
+        "USER": "postgres",
+        "PASSWORD": os.getenv("DB_PASSWORD"),
+    },
 }
 
 
@@ -153,6 +156,6 @@ MEDIA_URL = "/media/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-CORS_ALLOWED_ORIGINS = ["http://localhost:8080"]
+CORS_ALLOWED_ORIGINS = [os.getenv("WEB_SERVER_URL")]
 
 CORS_ALLOW_ALL_ORIGINS = True
