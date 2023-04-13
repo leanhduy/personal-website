@@ -39,6 +39,9 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
+    "leanhduy.pythonanywhere.com",
+    "personal-website-git-main-leanhduy.vercel.app",
+    "personal-website-leanhduy.vercel.app",
 ]
 
 
@@ -95,10 +98,10 @@ WSGI_APPLICATION = "mysite.wsgi.application"
 
 DATABASES = {
     # ! FOR PASSING CI TESTS ON GITHUB - UNCOMMENT THIS SECTION AND COMMENT OUT THE NEXT SECTION WHEN COMMITTING TO GITHUB
-    # "default": {
-    #     "ENGINE": "django.db.backends.sqlite3",
-    #     "NAME": BASE_DIR / "db.sqlite3",
-    # },
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    },
     # ! FOR DEVELOPING LOCALLY - UNCOMMENT THIS SECTION AND COMMENT OUT THE PREVIOUS SECTION WHEN DEVELOPING LOCALLY
     # ? POSTGRES
     # "default": {
@@ -108,15 +111,15 @@ DATABASES = {
     #     "PASSWORD": os.getenv("DB_PASSWORD"),
     # },
     # ? MYSQL
-    "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": "personal_website_dev_db",
-        "USER": "root",
-        "PASSWORD": os.getenv("MYSQL_ROOT_PW"),
-        "HOST": "127.0.0.1",
-        "PORT": "3306",
-        "OPTIONS": {"init_command": "SET sql_mode='STRICT_TRANS_TABLES'"},
-    }
+    # "default": {
+    #     "ENGINE": "django.db.backends.mysql",
+    #     "NAME": "personal_website_dev_db",
+    #     "USER": "root",
+    #     "PASSWORD": os.getenv("MYSQL_ROOT_PW"),
+    #     "HOST": "127.0.0.1",
+    #     "PORT": "3306",
+    #     "OPTIONS": {"init_command": "SET sql_mode='STRICT_TRANS_TABLES'"},
+    # }
 }
 
 
@@ -167,6 +170,9 @@ MEDIA_URL = "/media/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-CORS_ALLOWED_ORIGINS = [os.getenv("WEB_SERVER_URL")]
+CORS_ALLOWED_ORIGINS = [
+    "https://personal-website-git-main-leanhduy.vercel.app",
+    "https://personal-website-leanhduy.vercel.app",
+]
 
 CORS_ALLOW_ALL_ORIGINS = True
