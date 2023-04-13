@@ -23,7 +23,7 @@
           </div>
           <div class="container text-end">
             <img
-              :src="`${process.env.VUE_APP_MEDIA_URL}${project.featured_image}`"
+              :src="`${MEDIA_URL}${project.featured_image}`"
               class="featured_image mt-2 rounded-pill"
               :alt="project.name"
             />
@@ -42,6 +42,11 @@ export default {
     const { projects, error, load } = getProjects()
     load()
     return { projects, error }
+  },
+  computed: {
+    MEDIA_URL() {
+      return process.env.VUE_APP_MEDIA_URL
+    },
   },
 }
 </script>

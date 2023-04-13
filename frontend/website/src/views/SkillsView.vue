@@ -6,7 +6,7 @@
         <div class="h3 mb-3">Programming Languages & Tools</div>
         <ul class="list-inline dev-icons">
           <li class="list-inline-item my-svg" v-for="skill in this.skills" :key="skill.id">
-            <img class="my-skill-image" :src="`${process.env.VUE_APP_MEDIA_URL}${skill.svg_image}`" alt="skill.name" />
+            <img class="my-skill-image" :src="`${MEDIA_URL}${skill.svg_image}`" alt="skill.name" />
           </li>
         </ul>
       </div>
@@ -22,6 +22,11 @@ export default {
     const { skills, error, load } = getSkills()
     load()
     return { skills, error }
+  },
+  computed: {
+    MEDIA_URL() {
+      return process.env.VUE_APP_MEDIA_URL
+    },
   },
 }
 </script>
