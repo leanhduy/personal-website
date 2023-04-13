@@ -2,7 +2,7 @@ import { ref } from 'vue'
 const getSkills = () => {
   const skills = ref([])
   const error = ref(null)
-  const backendUrl = process.env.BACKEND_URL
+  const backendUrl = process.env.VUE_APP_BACKEND_URL
   const load = async () => {
     try {
       const response = await fetch(`${backendUrl}/api/v1/skills`)
