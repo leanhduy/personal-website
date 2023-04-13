@@ -39,6 +39,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
+    "https://personal-website-git-main-leanhduy.vercel.app",
+    "https://personal-website-leanhduy.vercel.app",
 ]
 
 
@@ -167,6 +169,9 @@ MEDIA_URL = "/media/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-CORS_ALLOWED_ORIGINS = [os.getenv("WEB_SERVER_URL")]
+CORS_ALLOWED_ORIGINS = [
+    "https://personal-website-git-main-leanhduy.vercel.app",
+    "https://personal-website-leanhduy.vercel.app",
+]
 
 CORS_ALLOW_ALL_ORIGINS = True
