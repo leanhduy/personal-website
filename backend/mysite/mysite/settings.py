@@ -39,8 +39,9 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    "https://personal-website-git-main-leanhduy.vercel.app",
-    "https://personal-website-leanhduy.vercel.app",
+    "leanhduy.pythonanywhere.com",
+    "personal-website-git-main-leanhduy.vercel.app",
+    "personal-website-leanhduy.vercel.app",
 ]
 
 
