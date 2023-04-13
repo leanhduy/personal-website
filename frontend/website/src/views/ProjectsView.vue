@@ -23,7 +23,7 @@
           </div>
           <div class="container text-end">
             <img
-              :src="`${MEDIA_URL}/${project.featured_image}`"
+              :src="`${process.env.VUE_APP_MEDIA_URL}${project.featured_image}`"
               class="featured_image mt-2 rounded-pill"
               :alt="project.name"
             />
@@ -36,18 +36,12 @@
 
 <script>
 import getProjects from '../composables/getProjects.js'
-import { MEDIA_URL } from '../consts/consts.js'
 export default {
   name: 'ProjectsView',
   setup() {
     const { projects, error, load } = getProjects()
     load()
     return { projects, error }
-  },
-  computed: {
-    MEDIA_URL() {
-      return MEDIA_URL
-    },
   },
 }
 </script>

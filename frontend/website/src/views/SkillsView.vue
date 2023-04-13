@@ -6,7 +6,7 @@
         <div class="h3 mb-3">Programming Languages & Tools</div>
         <ul class="list-inline dev-icons">
           <li class="list-inline-item my-svg" v-for="skill in this.skills" :key="skill.id">
-            <img class="my-skill-image" :src="`${MEDIA_URL}${skill.svg_image}`" alt="skill.name" />
+            <img class="my-skill-image" :src="`${process.env.VUE_APP_MEDIA_URL}${skill.svg_image}`" alt="skill.name" />
           </li>
         </ul>
       </div>
@@ -16,18 +16,12 @@
 
 <script>
 import getSkills from '../composables/getSkills.js'
-import { MEDIA_URL } from '../consts/consts.js'
 export default {
   name: 'SkillsView',
   setup() {
     const { skills, error, load } = getSkills()
     load()
     return { skills, error }
-  },
-  computed: {
-    MEDIA_URL() {
-      return MEDIA_URL
-    },
   },
 }
 </script>
