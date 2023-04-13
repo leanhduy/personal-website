@@ -11,7 +11,8 @@ __pycache__/
 .Python
 build/
 develop-eggs/
-dist/
+# Comment this out for the dist folder to be included in the repo
+# dist/
 downloads/
 eggs/
 .eggs/
