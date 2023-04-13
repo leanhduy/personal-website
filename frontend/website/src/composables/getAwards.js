@@ -3,6 +3,7 @@ const getAwards = () => {
   const awards = ref([])
   const error = ref(null)
   const backendUrl = process.env.BACKEND_URL
+  console.log(backendUrl)
   const load = async () => {
     try {
       const response = await fetch(`${backendUrl}/api/v1/awards`)
