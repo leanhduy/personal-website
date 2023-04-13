@@ -3,7 +3,7 @@ const getAwards = () => {
   const awards = ref([])
   const error = ref(null)
   // This is the backend URL from the .env file on Verc
-  const backendUrl = import.meta.env.VITE_BACKEND_URL
+  const backendUrl = import.meta.env.VITE_BACKEND_URL | process.env.VITE_BACKEND_URL
   console.log(backendUrl)
   const load = async () => {
     try {
