@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
-/dist
+# Commend out this to deploy to Vercel
+# /dist
 
 
 # local env files
