@@ -2,7 +2,8 @@ import { ref } from 'vue'
 const getAwards = () => {
   const awards = ref([])
   const error = ref(null)
-  const backendUrl = process.env.BACKEND_URL
+  // This is the backend URL from the .env file on Verc
+  const backendUrl = import.meta.env.VITE_BACKEND_URL
   console.log(backendUrl)
   const load = async () => {
     try {

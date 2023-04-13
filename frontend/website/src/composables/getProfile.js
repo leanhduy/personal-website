@@ -2,7 +2,7 @@ import { ref } from 'vue'
 const getProfile = () => {
   const profile = ref(null)
   const error = ref(null)
-  const backendUrl = process.env.BACKEND_URL
+  const backendUrl = import.meta.env.VITE_BACKEND_URL
   const load = async () => {
     try {
       const response = await fetch(`${backendUrl}/api/v1/admin`)

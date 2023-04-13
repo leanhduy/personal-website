@@ -1,1 +1,1 @@
-export const MEDIA_URL = process.env.BACKEND_URL
+export const MEDIA_URL = import.meta.env.VITE_BACKEND_URL
