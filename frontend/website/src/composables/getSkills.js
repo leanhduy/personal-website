@@ -2,9 +2,10 @@ import { ref } from 'vue'
 const getSkills = () => {
   const skills = ref([])
   const error = ref(null)
+  const backendUrl = process.env.BACKEND_URL
   const load = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/v1/skills')
+      const response = await fetch(`${backendUrl}/api/v1/skills`)
       if (!response.ok) {
         throw Error('No data available')
       }
