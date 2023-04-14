@@ -17,8 +17,12 @@
               {{ project.description }}
             </p>
             <div class="social-icons">
-              <a class="social-icon-sm" :href="project.source_url"><i class="fab fa-github"></i></a>
-              <a class="social-icon-sm" :href="project.website_url"><i class="fa fa-globe"></i></a>
+              <a class="social-icon-sm" v-if="project.source_url" :href="project.source_url"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a class="social-icon-sm" v-if="project.website_url" :href="project.website_url"
+                ><i class="fa fa-globe"></i
+              ></a>
             </div>
           </div>
           <div class="container text-end">

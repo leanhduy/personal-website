@@ -4,11 +4,17 @@
       <div class="resume-section-content">
         <h2 class="mb-5">Skills</h2>
         <div class="h3 mb-3">Programming Languages & Tools</div>
-        <ul class="list-inline dev-icons">
-          <li class="list-inline-item my-svg" v-for="skill in this.skills" :key="skill.id">
-            <img class="my-skill-image" :src="`${MEDIA_URL}${skill.svg_image}`" alt="skill.name" />
+        <ul v-if="skills.length > 0" class="list-inline dev-icons">
+          <li class="list-inline-item my-svg" v-for="skill in skills" :key="skill.id">
+            <img
+              v-if="skill.svg_image"
+              class="my-skill-image"
+              :src="`${MEDIA_URL}${skill.svg_image}`"
+              :alt="skill.name"
+            />
           </li>
         </ul>
+        <h5 v-else>Coming up soon... 😬</h5>
       </div>
     </section>
   </div>
