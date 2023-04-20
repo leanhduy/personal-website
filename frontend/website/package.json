@@ -8,6 +8,7 @@
     "jsonserver": "json-server --watch data/db.json"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.0.0",
     "core-js": "^3.8.3",
     "json-server": "^0.17.3",
     "vue": "^3.2.13",
